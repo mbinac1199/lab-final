@@ -33,17 +33,19 @@ function FlatListComponent({ data }) {
               </Text>
             </View>
 
+            <View style={styles.detailContainer}>
+              <Ionicons name="leaf" size={20} color="black" />
+              <Text style={styles.rating}>
+                Environment: {item.environmentScore}
+              </Text>
+            </View>
+
             <View style={styles.otherDetails}>
               <Text style={styles.overallScores}>
-                Classical Rating: {item.researchScore}
+                Research: {item.researchScore}
               </Text>
-              <Text style={styles.rating}>
-                Rapid Rating: {item.industryScore}
-              </Text>
-              <Text style={styles.rating}>Blitz Rating: {item.outlook}</Text>
-              <Text style={styles.rating}>
-                Blitz Rating: {item.environmentScore}
-              </Text>
+              <Text style={styles.rating}>Industry: {item.industryScore}</Text>
+              <Text style={styles.rating}>Outlook: {item.outlook}</Text>
             </View>
           </View>
         </View>
